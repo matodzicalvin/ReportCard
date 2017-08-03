@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codetribe.reportcard.Spinner">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/wel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+   <ImageView
+       android:layout_width="fill_parent"
+       android:layout_height="200dp"
+       app:srcCompat="@drawable/log"
+       android:layout_above="@+id/button7"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:cursorVisible="true"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:text="CREATE REPORT"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:cursorVisible="true"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:ems="10"
+        android:padding="10dp"
+        android:text="EDIT REPORT"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/button9"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:cursorVisible="true"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:ems="10"
+        android:padding="10dp"
+        android:text="VIEW REPORT"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+</RelativeLayout>

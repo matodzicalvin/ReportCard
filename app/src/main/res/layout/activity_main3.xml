@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codetribe.reportcard.Main3Activity">
+
+    <TextView
+        android:id="@+id/textViewstdname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="STUDENT NAME"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/textViewsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="47dp"
+        android:text="SUBJECTS"
+        android:layout_below="@+id/textViewstdname" />
+
+    <TextView
+        android:id="@+id/textViewgrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewsub"
+        android:layout_marginLeft="23dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/textViewstdname"
+        android:layout_toRightOf="@+id/textViewstdname"
+        android:text="GRADE" />
+
+    <TextView
+        android:id="@+id/textViewcosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="COSC"
+        android:layout_below="@+id/textViewsub"
+        android:layout_alignLeft="@+id/textViewsub"
+        android:layout_alignStart="@+id/textViewsub" />
+
+    <TextView
+        android:id="@+id/textViewgrdcosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="GRD "
+        android:layout_alignBaseline="@+id/textViewcosc"
+        android:layout_alignBottom="@+id/textViewcosc"
+        android:layout_alignRight="@+id/textViewgrd"
+        android:layout_alignEnd="@+id/textViewgrd" />
+
+    <TextView
+        android:id="@+id/textViewcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewcosc"
+        android:layout_alignStart="@+id/textViewcosc"
+        android:layout_below="@+id/textViewcosc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="76dp"
+        android:text="CALCULAS" />
+
+    <TextView
+        android:id="@+id/textViewgrdcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="GRD"
+        android:layout_alignBaseline="@+id/textViewcalc"
+        android:layout_alignBottom="@+id/textViewcalc"
+        android:layout_alignRight="@+id/textViewgrdcosc"
+        android:layout_alignEnd="@+id/textViewgrdcosc" />
+
+    <TextView
+        android:id="@+id/textViewstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:layout_alignLeft="@+id/textViewcalc"
+        android:layout_alignStart="@+id/textViewcalc"
+        android:layout_below="@+id/textViewcalc"
+        android:layout_marginTop="52dp"
+        android:text="STATISTICS" />
+
+    <TextView
+        android:id="@+id/textViewsgrdstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="GRD"
+        android:layout_alignBaseline="@+id/textViewstat"
+        android:layout_alignBottom="@+id/textViewstat"
+        android:layout_alignLeft="@+id/textViewgrdcalc"
+        android:layout_alignStart="@+id/textViewgrdcalc" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="MAIN MENU"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:text="PREVIOUS"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:text="NEXT"
+        android:layout_above="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

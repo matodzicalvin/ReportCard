@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Main4Activity" >
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:padding="10dip"
+        android:cursorVisible="true"
+        android:gravity="left"
+        android:hint="@string/Username"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="12dp"
+        android:cursorVisible="true"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:padding="10dip" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:onClick="OnClick"
+        android:padding="10dp"
+        android:text="@string/ForgotPassWord"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnUserSite"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/btnForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:onClick="OnClick"
+        android:padding="10dp"
+        android:text="@string/UserSite"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="8dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@string/NewText"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AttemptsLeft"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/btnUserSite"
+        android:layout_alignLeft="@+id/btnUserSite"
+        android:layout_alignStart="@+id/btnUserSite"
+        android:layout_marginTop="25dp" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:onClick="OnClick"
+        android:padding="10dp"
+        android:text="@string/Login"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ReLayout"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSITY STUDENTS REPORT CARD"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold|italic"
+        android:inputType="textPersonName"
+        android:hint="ENTER STUDENT NAME"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:background="#000"
+        android:layout_width="1dp"
+        android:layout_height="222dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sname"
+        android:layout_marginBottom="15dp"
+        android:layout_alignLeft="@+id/right"/>
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="201dp"
+        android:layout_height="222dp"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/view"
+        android:layout_below="@+id/sname">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:text="COURSE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:id="@+id/calculas"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/gradecosc"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:padding="10dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic"
+            android:hint="COURSE"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/statistics"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cosc1"
+            android:layout_alignStart="@+id/cosc1"
+            android:background="@drawable/rounded_edittext"
+            android:layout_below="@+id/calculas"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:padding="10dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic"
+            android:inputType="textPersonName"
+            android:hint="COURSE" />
+
+        <EditText
+            android:id="@+id/cosc1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:padding="10dip"
+            android:background="@drawable/rounded_edittext"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic"
+            android:inputType="textPersonName"
+            android:hint="COURSE"
+            android:layout_below="@+id/sname"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="180dp"
+        android:layout_height="222dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/sname"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="14dp"
+            android:text="GRADES" />
+
+        <EditText
+            android:id="@+id/gradecosc"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="GRADES"
+            android:padding="10dip"
+            android:background="@drawable/rounded_edittext"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/cosc1"
+            android:layout_alignBottom="@+id/cosc1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/gradecal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calculas"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="GRADES"
+            android:inputType="number"
+            android:padding="10dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic" />
+
+
+        <EditText
+            android:id="@+id/gradesta"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="GRADES"
+            android:padding="10dip"
+            android:background="@drawable/rounded_edittext"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold|italic"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/statistics"
+            android:layout_alignBottom="@+id/statistics"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:text="SAVE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000"
+        android:background="@drawable/admin_toyota_button_bg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:text="MAIN MENU"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+</RelativeLayout>
